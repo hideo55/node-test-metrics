@@ -12,7 +12,7 @@ assert.ok(!testMetrics.hasComplexCode('/path/to/sourcecode', 25));
 
 # Issue
 
-Can't use it with some testing/spec framework cause of colision prototype modification.
+Now, can't use it with some testing/spec framework because of colision prototype modification.
 
 ## License 
 
