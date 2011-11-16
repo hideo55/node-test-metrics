@@ -3,14 +3,26 @@
 
   Test metrics of your code
   
-# Usage
+## Usage
 
 ```javascript
 var testMetrics = require('test-metrics');
 assert.ok(!testMetrics.hasComplexCode('/path/to/sourcecode', 25));
 ```
 
-# Issue
+## Methods
+
+### hasComplexCode(srcPath, threshold)
+
+This method returns boolean value.If cyclomatic complexity of JavaScript code 
+on `srcPath` exceeds `threshold` value, will return true.
+
+### hasTooLargeFunction(srcPath, threshold)
+
+This method returns boolean value.If lines(per function) of JavaScript code 
+on `srcPath` exceeds `threshold` value, will return true.
+
+## Issue
 
 Now, can't use it with some testing/spec framework because of colision prototype modification.
 
